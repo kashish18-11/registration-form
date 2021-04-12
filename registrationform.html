@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap">
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Registration Form</h1>
+    <p id="description" class="description text-center">
+      
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your full name" required />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email"  name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+      <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+    </div>
+    
+    <div class="form-group">
+      <p>Gender</p>
+      <label>
+        <input name="user-recommend" value="definitely" type="radio" class="input-radio"/>Female</label>
+      <label>
+        <input name="user-recommend" value="maybe" type="radio"  class="input-radio" />Male</label>
+      <label><input
+          name="user-recommend" value="not-sure" type="radio" class="input-radio"  />Prefer not to say</label>
+    </div>
+    <div class="form-group">
+      <p>Address</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your address here..."></textarea>
+    </div>
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>
+        What is your current qualification?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+         <option value="phd">Phd</option>
+        <option value="postgraduate">Post-Graduate</option>
+        <option value="undergraduate">Under-Graduate</option>
+         <option value="diploma">Diploma</option>
+        <option value="12th">12<sup>th</sup></option>
+        <option value="10th">10<sup>th</sup></option>
+         <option value="none">None of the above</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What are your interests?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label><input name="prefer" value="front-end" type="checkbox" class="input-checkbox" />Front-end </label>
+      <label><input name="prefer" value="back-end" type="checkbox" class="input-checkbox" />Back-end </label>
+      <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox" />Data Visualization</label>
+      <label><input name="prefer" value="data analytics" type="checkbox" class="input-checkbox" />Data Analytics </label>
+      <label><input name="prefer" value="android" type="checkbox" class="input-checkbox" />Android</label>
+      <label><input name="prefer" value="aws" type="checkbox" class="input-checkbox" />AWS</label>
+      <label><input name="prefer" value="cloud computing" type="checkbox" class="input-checkbox" />Cloud Computing</label>
+      <label><input name="prefer" value="blockchain" type="checkbox" class="input-checkbox"/>Blockchain</label>
+      <label><input name="prefer" value="artificial intelligence" type="checkbox" class="input-checkbox"/>Artificial Intelligence</label >
+      <label><input name="prefer" value="machine learning" type="checkbox" class="input-checkbox" />Machine Learning</label>
+      <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox" />Additional Courses</label>
+    </div>
+
+    <div class="form-group">
+      <p>Any additional certifications?</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
